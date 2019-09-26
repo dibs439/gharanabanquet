@@ -1,0 +1,404 @@
+@media(max-width:1199px){
+    .header_menu ul li a{
+        padding: 15px 10px;
+    }
+    .logo {
+        width: 130px;
+        margin: 0px auto 30px;
+    }
+    .banner_btm h1{
+        line-height: 40px;
+    }
+    .banner_btm{
+        padding: 15px 0;
+    }
+    .banner_btm h1{
+        font-size: 25px;
+    }
+    .banner_btm span{
+        font-size: 35px;
+    }
+    .listing_cell p{
+        margin: 0;
+    }
+    .banquet_list_area{
+        padding: 70px 0 56px;
+    }
+    .banquet_hall{
+        width: 115px;
+    }
+    .content_cell{
+        padding:15px;
+    }
+    .content_cell h3{
+        margin:8px 0;
+        font-size: 13px;
+    }
+    .slider_content{
+        margin-left: 10px;
+        padding: 32px 20px 20px;
+    }
+    .slider_pic{
+        width: 305px;
+        height: 265px;
+    }
+    .slider_content p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .slider_inr .slick-slide{
+        margin-bottom: 20px;
+    }
+    .demo_slider .slick-prev {
+        left: -13px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    .content_cell p br{
+        display: none;
+    }
+    .innr_cell{
+        margin: 0 20px 20px;
+    }
+
+}
+@media(max-width:991px){
+    .menutgl_btn a{
+        display: block;
+    }
+    .header_menu ul{
+        position: fixed;
+        background: #000;
+        padding: 25px;
+        top: 0;
+        z-index: 99;
+        bottom: 0;
+        left:-230px;
+        width:230px;
+        transition: 300ms ease-in-out;
+    }
+    .header_menu ul li{
+       display: block;
+    }
+    .header_menu{
+        height:40px;
+    }
+    .bodymenu .header_menu ul{
+        left: 0;
+    }
+    .logo {
+      width: 100px;
+      top: 0;
+      margin: 0px auto;
+      transform: none;
+    }
+    .exprnce_content {
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    .exprnce_content p{
+        font-size: 14px;
+        line-height: 23px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .expnce_left_wrap::before,
+    .expence_inr:before{
+        height: 285px;
+    }
+    .exprnce_area{
+        padding: 50px 0;
+    }
+    .slider_content{
+        width: 285px;
+    }
+    .slider_pic{
+        width: 265px;
+        height: 233px;
+        margin-top: 50px;
+    }
+    .slider_content p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .slider_content h5 {
+        font-size: 16px;
+    }
+    .video_area {
+        padding: 50px 0;
+    }
+    .mail_text a{
+        font-size: 16px;
+    }
+    .terms_list ul li {
+        padding: 0 10px;
+    }
+    .social_area a{
+        margin: 0;
+    }
+    .frm_area {
+        margin: 0;
+    }
+    .contact_inner{
+        padding: 25px;
+    }
+    .contact_inner h2{
+        margin-bottom: 55px;
+    }
+    .address_cell address{
+        font-size: 15px;
+    }
+    .frm_cell{
+        margin-bottom: 25px;
+    }
+    
+    
+}
+@media(max-width:768px){
+    .logo {
+        width: 70px;
+        margin: 45px auto 30px;
+    }
+    .book_btn a{
+        padding: 15px 30px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .banner_btm h1 {
+        font-size: 19px;
+    }
+    .contact_no {
+        margin: 15px 0;
+    }
+    .contact_no a span{
+        font-size: 20px !important;
+    }
+    .contact_no a img{
+        width: 30px;
+        margin-right: 10px;
+    }
+    .listing_cell p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .listing_cell h2{
+        font-size: 20px;
+    }
+    .banquet_list_area {
+        padding: 20px 0;
+    }
+    .viewmore {
+        margin-top: 45px;
+    }
+    .gharanatext,
+    .expence_inr::before,
+    .expnce_left_wrap::before{
+        display: none;
+    }
+    .exprnce_content{
+        margin-left: 0;
+    }
+    .expence_inr{
+        margin-top: 60px;
+    }
+    .exprnce_content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .expnce_left{
+        padding: 5px;
+    }
+    .exprnce_content .viewmore {
+        margin-top: 5px;
+    }
+    .slider_inr{
+        padding: 35px 0 0;
+    }
+    .slider_pic {
+        width: 175px;
+        height: 153px;
+        margin-top: 110px;
+    }
+    .frm_fld{
+        padding: 5px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .gettouch_area .viewmore {
+        margin-top: 0;
+    }   
+    .footer_lgo{
+        display: none;
+    }
+    .venue_area {
+        margin: 0;
+    }
+    .cmn_adrs address{
+        margin-bottom: 15px;
+    }
+    .footer_wrap ul, .register_ofc {
+        margin: 30px 0 0;
+    }
+    .footer_wrap ul li {
+        margin: 0 0 10px;
+    }
+    .footer_wrap ul li a{
+        font-size: 14px;
+    }
+    .bottom_footer{
+        margin-top: 25px;
+    }
+    .footer_wrap .order-1{
+        order: 3 !important;
+    }
+    .footer_wrap ul{
+        margin-top: 8px;
+    }
+    .copyright{
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .expnce_left img{
+        width: 100%;
+    }
+    .services .listing_cell h2 {
+        font-size: 20px;
+    }
+    #filters li{
+        padding: 0 5px 10px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    #filters {
+        margin-bottom: 25px;
+    }
+    gallery_inr{
+        margin-bottom: 35px;
+    }
+    
+}
+@media(max-width:576px){
+    .header_menu {
+        height: 35px;
+    }
+    .banner_caption{
+        position: static;
+        transform: none;
+        background: #000;
+        padding: 25px 0;
+    }
+    .logo{
+        margin-top: 0;
+    }
+    .banner_btm h1 {
+        line-height: 25px;
+    }
+    .book_btn a{
+        background: #93581c;
+    }
+    .listing_cell h2{
+        margin-bottom: 0;
+    }
+    .listing_cell{
+        margin-bottom: 20px;
+    }
+    .listing_blog {
+        padding: 25px 0;
+    }
+    .exprnce_content{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .slider_content{
+        float: none;
+        width: 100%;
+        margin: 10px;
+    }
+    .demo_slider{
+        padding: 0;
+    }
+    .social_area{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .terms_list{
+        text-align: center !important;
+    }
+    .gettouch_area {
+        padding-bottom: 25px;
+    }
+    .midd_pic{
+        display: none;
+    }
+    .slider_content{
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+    .slider_content:before{
+        display: none;
+    }
+    .slider_pic {
+        height: auto;
+        float: none;
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .slick-dots{
+        text-align: center;
+    }
+    .slick-dots li{
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+        background: #93581c;
+        border-radius: 50%;
+        font-size: 0;
+    }
+    .serchfld {
+        width: 300px;
+    }
+    .exprnce_area.occasons {
+        padding: 25px 0;
+    }
+    .exprnce_area:nth-child(2n) .exprnce_content {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contact_inner h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .address_cell address {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    contact_cell{
+        font-size: 15px;
+    }
+    .map_area {
+        margin: 25px 0;
+    }
+    .contact_area{
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:480px){
+    .copyright{
+        font-size: 11px;
+    }
+    .frm_cell {
+        width: 100%;
+        float: none;
+        padding: 0 4px;
+        margin-bottom: 10px;
+    }
+    
+}
