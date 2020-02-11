@@ -17,10 +17,11 @@ class CreateOccasionDetailsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('occasion_id')->references('id')->on('occasions')->onUpdate('cascade')->onDelete('cascade');;
             $table->string('title');
-            $table->string('description');
-            $table->string('photo', 25);
+            $table->string('sub_title')->nullable();
+            $table->mediumText('description')->nullable();
+            $table->string('photo', 25)->nullable();
             $table->enum('active', array('0', '1'));
-            $table->integer('sl_no');
+            $table->integer('sl_no')->nullable();
             $table->timestamps();
         });
     }

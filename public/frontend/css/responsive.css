@@ -152,8 +152,8 @@
     .frm_cell{
         margin-bottom: 25px;
     }
-    
-    
+
+
 }
 @media(max-width:768px){
     .logo {
@@ -200,7 +200,7 @@
         margin-left: 0;
     }
     .expence_inr{
-        margin-top: 60px;
+        margin-top: 10px;
     }
     .exprnce_content p{
         font-size: 12px;
@@ -227,7 +227,7 @@
     }
     .gettouch_area .viewmore {
         margin-top: 0;
-    }   
+    }
     .footer_lgo{
         display: none;
     }
@@ -277,7 +277,7 @@
     gallery_inr{
         margin-bottom: 35px;
     }
-    
+
 }
 @media(max-width:576px){
     .header_menu {
@@ -400,5 +400,5 @@
         padding: 0 4px;
         margin-bottom: 10px;
     }
-    
+
 }

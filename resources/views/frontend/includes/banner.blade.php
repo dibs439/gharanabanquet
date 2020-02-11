@@ -1,14 +1,21 @@
 <!--banner area-->
 <div class="banner_area">
-    <img src="{{ asset('/frontend/images/gharana-banquet-front.png') }}" alt="">
+    @if (url()->current() == "/")
+        <img src="{{ asset('/frontend/images/gharana-banquet-front.png') }}" alt="Gharana Banquet">
+    @elseif (strpos(url()->current(), '/occasions') >= 0)
+        <img src="{{ asset('/frontend/images/banner.jpg') }}" alt="Gharana Banquet">
+    @else
+        <img src="{{ asset('/frontend/images/gharana-banquet-banner2.png') }}" alt="Gharana Banquet">
+    @endif
     <div class="banner_caption text-center">
         <div class="logo wow fadeIn">
-        <a href="index.html"><img src="{{ asset('/frontend/images/logo.png') }}" alt="{{ env('APP_TITLE') }}"></a>
+        <a href="{{ url('/') }}"><img src="{{ asset('/frontend/images/logo.png') }}" alt="{{ env('APP_TITLE') }}"></a>
         </div>
         <span class="book_btn wow fadeInUp">
-            <a href="contact.html">BOOK NOW</a>
+            <a href="{{ url('/contact') }}">BOOK NOW</a>
         </span>
     </div>
+
 </div>
 <!--banner end-->
 
@@ -23,12 +30,12 @@
 <!--end-->
 
 
-<!--contact no-->
-<div class="contact_no text-center">
-    <a href="tel:+91 9830170287" class="wow flash">
-        <img src="images/phn_icon.png" alt="">
-        <span>+91 9830170287 / 7003966606</span>
-    </a>
-</div>
-<!--end-->
+
+    <!--contact no-->
+    <div class="contact_no text-center">
+        <img src="{{ asset('/frontend/images/phn_icon.png') }}" alt=""><br />
+        <a href="tel:+919830170287" class="wow flash"><span>+91-9830170287</span></a><br />
+        <a href="tel:+7003966606" class="wow flash"><span>+91-7003966606</span></a>
+    </div>
+    <!--end-->
 

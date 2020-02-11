@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="exprnce_content">
-                            <span><img src="images/pic3.png" alt=""></span>
+                            <span><img src="{{ asset('/frontend/images/pic3.png') }}" alt=""></span>
                             <p>At Gharana, we value customer satisfaction the most. We believe that with the kind of services that we offer we will make you want to come back over and over again. 
                                 Our exquisite food (in case you book our catering service) coupled with a relaxing atmosphere will surely make each of your guests delighted and stay longer.
                                 The perfectly neat space coupled with delicious catering services
@@ -162,7 +162,7 @@
             <div class="text-center cmn_header">
                 <h4 class="wow fadeInDown">Our Offers</h4>
                 <span>Banquet OffersThe Best Banquet Hall Deals This Season</span>
-                <div class="pic1"><img src="images/pic1.png" alt=""></div>
+                <div class="pic1"><img src="{{ asset('/frontend/images/pic1.png') }}" alt=""></div>
             </div>
             <div class="slider_inr">
                 <div class="demo_slider">

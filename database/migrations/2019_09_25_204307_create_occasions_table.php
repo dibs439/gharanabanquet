@@ -14,11 +14,13 @@ class CreateOccasionsTable extends Migration
     public function up()
     {
         Schema::create('occasions', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('name');
+            $table->string('slug', 50);
             $table->string('background_img', 25)->nullable();
             $table->string('heading')->nullable();
             $table->string('sub_heading')->nullable();
+            $table->text('description')->nullable();
             $table->string('meta_title')->nullable();
             $table->string('meta_keywords')->nullable();
             $table->string('meta_description')->nullable();
