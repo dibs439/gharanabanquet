@@ -14,22 +14,19 @@ class PagesController extends Controller
     {
         $this->imgAltTags = array(
 
-            'banquet hall in South Kolkata',
-            'wedding venue in South Kolkata',
-            'Best AC Banquet Hall in Kolkata',
-            'Best AC Wedding Banquet Hall in Kolkata',
+            'Banquet Halls in South Kolkata',
+            'Wedding Venue in South Kolkata',
+            'Best AC Banquet Halls in Kolkata',
+            'Best AC Wedding Banquet Halls in Kolkata',
             'Banquets for Marriage in South Kolkata',
-            'AC Banquet Hall for Corporate Parties in South Kolkata',
-            'Best AC Banquet Hall in South Kolkata',
-            'Banquet hall near Garia',
-            'Best AC Banquet Hall for Annual Meeting',
-            'Banquet Hall in Jorabridge',
-            'Banquet Hall for Anniversary Party in Kolkata',
-            'Banquet Hall in Survey Park',
-            'Best Banquet Hall in Kolkata for Family Functions',
-            'Banquet Hall near Singhabari',
-            'AC Banquet Hall for Product Launch Parties in South kolkata',
-            'Banquet hall near santoshpur',
+            'AC Banquet Halls for Corporate Parties in South Kolkata',
+            'Affordable Banquet Halls in South Kolkata',
+            'Best AC Banquet Halls in South Kolkata',
+            'Banquet Halls Near New Garia Metro Station',
+            'Budget Friendly AC Banquet Halls',
+            'Banquet Halls for Anniversary Party in Kolkata',
+            'Best Banquet Halls in Kolkata for Family Functions',
+            'AC Banquet Halls for Product Launch Parties in South Kolkata'
 
         );
 
@@ -39,14 +36,13 @@ class PagesController extends Controller
 
     public function index() {
 
-        //dd(rand(0, count($this->imgAltTags)));
-
+        $page = Page::where('category', 'home')->with('contentBlock')->first();
         $meta['title'] = 'Gharana Banquet | Banquet Hall in South Kolkata ';
         $meta['keyword'] = '';
         $meta['description'] = 'Get the best deals with advanced facilities and much more at Gharana Banquet is the best you will get. It is the best luxurious banquet halls in South Kolkata for any events.';
         $meta['imgAltTags'] = $this->imgAltTags;
 
-        return view('frontend/index', ['meta' => $meta]);
+        return view('frontend/index', ['meta' => $meta, 'page' => $page]);
     }
 
     public function about() {
@@ -69,29 +65,52 @@ class PagesController extends Controller
 
         $occasion = Occasion::where('slug', $slug)->with('occasionDetails')->first();
 
+
         $meta = array();
-        if($occasion->meta_title) {
+        if(isset($occasion->meta_title)) {
             $meta['title'] = $occasion->meta_title;
         }
         else {
             $meta['title'] = "";
         }
 
-        if($occasion->meta_keywords) {
+        if(isset($occasion->meta_keywords)) {
             $meta['keyword'] = $occasion->meta_keywords;
         }
         else {
             $meta['keyword'] = "";
         }
 
-        if($occasion->meta_description) {
+        if(isset($occasion->meta_description)) {
             $meta['description'] = $occasion->meta_description;
         }
         else {
             $meta['description'] = "";
         }
 
-        return view('frontend/occasion', ['occasion' => $occasion, 'meta' => $meta]);
+        if(isset($occasion['heading'])) {
+            $page['heading'] = $occasion['heading'];
+        }
+        else {
+            $page['heading'] = "";
+        }
+
+        if(isset($occasion['sub_heading'])) {
+            $page['sub_heading'] = $occasion['sub_heading'];
+        }
+        else {
+            $page['sub_heading'] = "";
+        }
+
+        if(isset($occasion['sub_heading_1'])) {
+            $page['sub_heading_1'] = $occasion['sub_heading_1'];
+        }
+        else {
+            $page['sub_heading_1'] = "";
+        }
+        //dd($page);
+
+        return view('frontend/occasion', ['occasion' => $occasion, 'page' => $page, 'meta' => $meta]);
     }
 
     public function packages() {

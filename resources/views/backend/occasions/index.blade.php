@@ -32,7 +32,10 @@
                               <td>{{ $occasion->name }}</td>
                               <td>{{ $occasion->heading }}</td>
                               <td>@if(isset($occasion->updated_at)) {{ $occasion->updated_at->format('d/m/Y')   }}@endif</td>
-                              <td class="text-center"><a href="{{ url('/backend/occasions/edit/'. $occasion->id) }}">Edit</a></td>
+                              <td class="text-center">
+                                <a href="{{ url('/backend/occasions/edit/'. $occasion->id) }}">Edit</a> |
+                                <a href="{{ url('/backend/occasionDetails/'. $occasion->id) }}">Details</a>
+                              </td>
                             </tr>
                             @endforeach
                           </tbody>

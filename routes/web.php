@@ -40,4 +40,9 @@ Route::group(['middleware' => 'auth'], function()
     Route::get('/backend/occasions/edit/{id}', 'Backend\OccasionsController@edit');
     Route::patch('/backend/occasions/update/{id}', 'Backend\OccasionsController@update');
 
+    Route::get('/backend/occasionDetails/{id}', 'Backend\OccasionDetailsController@index');
+    Route::get('/backend/occasionDetails/edit/{id}', 'Backend\OccasionDetailsController@edit');
+    Route::patch('/backend/occasionDetails/update/{id}', 'Backend\OccasionDetailsController@update');
+
+
 });

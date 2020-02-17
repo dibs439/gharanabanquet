@@ -49,7 +49,7 @@
                             <label for="slug" class="col-md-4 control-label">Slug</label>
 
                             <div class="col-md-6">
-                                <input id="slug" type="text" class="form-control" name="slug" value="{{ old('slug', $occasion->slug) }}">
+                                <input id="slug" type="text" class="form-control" name="slug" value="{{ old('slug', $occasion->slug) }}" readonly="readonly">
 
 								@if ($errors->has('slug'))
 									<span class="help-block">
@@ -62,7 +62,7 @@
 
 
 						<div class="form-group{{ $errors->has('heading') ? ' has-error' : '' }}">
-                            <label for="heading" class="col-md-4 control-label">Heading</label>
+                            <label for="heading" class="col-md-4 control-label">Heading (H1)</label>
 
                             <div class="col-md-6">
                                 <input id="heading" type="text" class="form-control" name="heading" value="{{ old('heading', $occasion->heading) }}">
@@ -76,8 +76,10 @@
 
                         </div>
 
+
+
 						<div class="form-group{{ $errors->has('sub_heading') ? ' has-error' : '' }}">
-                            <label for="sub_heading" class="col-md-4 control-label">Sub Heading</label>
+                            <label for="sub_heading" class="col-md-4 control-label">Sub Heading (H2)</label>
 
                             <div class="col-md-6">
                                 <input id="sub_heading" type="text" class="form-control" name="sub_heading" value="{{ old('sub_heading', $occasion->sub_heading) }}">
@@ -91,6 +93,22 @@
 
                         </div>
 
+
+
+						<div class="form-group{{ $errors->has('sub_heading_1') ? ' has-error' : '' }}">
+                            <label for="sub_heading_1" class="col-md-4 control-label">Sub Heading (H2)</label>
+
+                            <div class="col-md-6">
+                                <input id="sub_heading_1" type="text" class="form-control" name="sub_heading_1" value="{{ old('sub_heading_1', $occasion->sub_heading_1) }}">
+
+								@if ($errors->has('sub_heading_1'))
+									<span class="help-block">
+										<strong>{{ $errors->first('sub_heading_1') }}</strong>
+									</span>
+								@endif
+                            </div>
+
+                        </div>
 
 						<div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
                             <label for="business_name" class="col-md-4 control-label">Description</label>

@@ -22,20 +22,23 @@
 <!--banner btm area-->
 <div class="banner_btm">
     <div class="container">
-        <h1 class="wow fadeInDown">Gharana - One of the finest Comfort Banquet Hall in Kolkata
-        </h1>
-        <span class="wow fadeInUp" style="font-size: 20px !important; ">A Splendid Banquet for a Striking Celebration!</span>
+        <h1 class="wow fadeInDown">{{ $page['heading'] ?? '' }}</h1>
+        <h2><span class="wow fadeInUp" style="font-size: 20px !important; ">{{ $page['sub_heading'] ?? '' }}</span><h2>
+
     </div>
+</div>
+
+
+
+
+
+<!--contact no-->
+<div class="contact_no text-center">
+    <img src="{{ asset('/frontend/images/phn_icon.png') }}" alt=""><br />
+    <a href="tel:+919830170287" class="wow flash"><span>+91-9830170287</span></a><br />
+    <a href="tel:+7003966606" class="wow flash"><span>+91-7003966606</span></a>
 </div>
 <!--end-->
 
-
-
-    <!--contact no-->
-    <div class="contact_no text-center">
-        <img src="{{ asset('/frontend/images/phn_icon.png') }}" alt=""><br />
-        <a href="tel:+919830170287" class="wow flash"><span>+91-9830170287</span></a><br />
-        <a href="tel:+7003966606" class="wow flash"><span>+91-7003966606</span></a>
-    </div>
-    <!--end-->
+<div class="listing_cell "><h2 class="text-center white">{{ $page['sub_heading_1'] ?? '' }}</h2></div><br />
 

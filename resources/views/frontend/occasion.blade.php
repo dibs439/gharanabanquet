@@ -23,13 +23,19 @@
                     </div>
                     <div class="expence_inr">
                         <div class="row">
+
                             <div class="col-sm-5">
+
                                 <div class="expnce_left_wrap">
+                                    @if(isset($occasionDetail->photo) && $occasionDetail->photo != '')
                                     <div class="expnce_left wow flipInX">
                                     <img src="{{ asset(env('OCCASIONS_PIC_MAX', '/storage/uploads/occasions/').$occasionDetail->photo) }}" alt="{{ $occasionDetail->photo_alt_text }}">
                                     </div>
+                                    @endif
                                 </div>
+
                             </div>
+
                             <div class="col-sm-7">
                                 <div class="exprnce_content">
                                     <span>

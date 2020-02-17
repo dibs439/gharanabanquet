@@ -25,6 +25,6 @@ class AlterOccasionDetailsTableAddColumn extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropColumn('photo_alt_text');
     }
 }

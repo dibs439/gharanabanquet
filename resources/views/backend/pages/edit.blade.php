@@ -45,7 +45,7 @@
 
 
 						<div class="form-group{{ $errors->has('heading') ? ' has-error' : '' }}">
-                            <label for="heading" class="col-md-4 control-label">Heading</label>
+                            <label for="heading" class="col-md-4 control-label">Heading (H1)</label>
 
                             <div class="col-md-6">
                                 <input id="heading" type="text" class="form-control" name="heading" value="{{ old('heading', $page->heading) }}">
@@ -60,7 +60,7 @@
                         </div>
 
 						<div class="form-group{{ $errors->has('sub_heading') ? ' has-error' : '' }}">
-                            <label for="sub_heading" class="col-md-4 control-label">Sub Heading</label>
+                            <label for="sub_heading" class="col-md-4 control-label">Sub Heading (H2)</label>
 
                             <div class="col-md-6">
                                 <input id="sub_heading" type="text" class="form-control" name="sub_heading" value="{{ old('sub_heading', $page->sub_heading) }}">
@@ -74,6 +74,20 @@
 
                         </div>
 
+						<div class="form-group{{ $errors->has('sub_heading_1') ? ' has-error' : '' }}">
+                            <label for="sub_heading_1" class="col-md-4 control-label">Additional Sub Heading (H2)</label>
+
+                            <div class="col-md-6">
+                                <input id="sub_heading_1" type="text" class="form-control" name="sub_heading_1" value="{{ old('sub_heading_1', $page->sub_heading_1) }}">
+
+								@if ($errors->has('sub_heading_1'))
+									<span class="help-block">
+										<strong>{{ $errors->first('sub_heading_1') }}</strong>
+									</span>
+								@endif
+                            </div>
+
+                        </div>
 
 						<div class="form-group{{ $errors->has('meta_title') ? ' has-error' : '' }}">
                             <label for="meta_title" class="col-md-4 control-label">Meta Title</label>

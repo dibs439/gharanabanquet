@@ -17,10 +17,7 @@ class PagesController extends Controller
 
     public function index() {
 
-
         $pages = Page::all();
-
-
         return view('backend/pages/index', ['pages' => $pages]);
     }
 
@@ -40,6 +37,7 @@ class PagesController extends Controller
         $rules = [
             'heading'               => 'required|max:191',
             'sub_heading'           => 'max:191',
+            'sub_heading_1'           => 'max:191',
             'meta_title'            => 'required|max:191',
             'meta_keywords'         => 'max:191',
             'meta_description'      => 'max:191',
@@ -52,6 +50,7 @@ class PagesController extends Controller
         $input = [
             'heading' 		        => $request['heading'],
             'sub_heading' 		    => $request['sub_heading'],
+            'sub_heading_1' 		    => $request['sub_heading_1'],
             'meta_title' 		    => $request['meta_title'],
             'meta_keywords' 		=> $request['meta_keywords'],
             'meta_description'      => $request['meta_description'],
